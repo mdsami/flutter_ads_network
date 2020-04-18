@@ -27,10 +27,8 @@ class _BannerState extends State<Banner> {
   @override
   void initState() {
     FirebaseAdMob.instance.initialize(appId: BannerAd.testAdUnitId);
-    //Change appId With Admob Id
-    _bannerAd = createBannerAd()
-      ..load()
-      ..show();
+
+
     super.initState();
   }
 
@@ -45,13 +43,15 @@ class _BannerState extends State<Banner> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Demo App"),
+        title: Text("Banner !"),
       ),
       body: Center(
           child: RaisedButton(
             child: Text('Click on Ads'),
             onPressed: () {
-
+              _bannerAd = createBannerAd()
+                ..load()
+                ..show();
             },
           )),
     );
