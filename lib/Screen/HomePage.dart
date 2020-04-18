@@ -9,35 +9,54 @@ class HomePage extends StatelessWidget {
         title: Text('Hey Ads!'),
         centerTitle: true,
       ),
-      body: ListView.builder(
-          itemCount: AdsList.length,
-          itemBuilder: (BuildContext, index) {
-            return RaisedButton(
-              color: Colors.white,
-              onPressed: () {
-                Navigator.pushNamed(context, "/${AdsList[index].GoTo}");
-              },
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Text(AdsList[index].Adsname),
-                  Image.network(
-                    "https://pluspng.com/img-png/google-logo-png-open-2000.png",
-                    height: size.height * 0.03,
-                    width: size.width * 0.05,
-                  )
-                ],
-              ),
-            );
-          }),
+      body: Column(
+        children: <Widget>[
+          ListView.builder(
+              shrinkWrap: true,
+              itemCount: AdsList.length,
+              itemBuilder: (BuildContext, index) {
+                return RaisedButton(
+                  color: Colors.white,
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/${AdsList[index].GoTo}");
+                  },
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Text(AdsList[index].Adsname),
+                      Image.network(
+                        "${AdsList[index].Provider}",
+                        height: size.height * 0.03,
+                        width: size.width * 0.05,
+                      )
+                    ],
+                  ),
+                );
+              }),
+        ],
+      ),
     );
   }
 
   List<AdsData> AdsList = [
-    AdsData("Banner", "Google", "Banner"),
-    AdsData("InterStital", "Google", "interstital"),
-    AdsData("Rewarded", "Google", "rewarded"),
-    AdsData("Native Advanced", "Google", "nativeadvanced"),
+    AdsData("Banner",
+        "https://pluspng.com/img-png/google-logo-png-open-2000.png", "Banner"),
+    AdsData(
+        "InterStital",
+        "https://pluspng.com/img-png/google-logo-png-open-2000.png",
+        "interstital"),
+    AdsData(
+        "Rewarded",
+        "https://pluspng.com/img-png/google-logo-png-open-2000.png",
+        "rewarded"),
+    AdsData(
+        "Native Advanced",
+        "https://pluspng.com/img-png/google-logo-png-open-2000.png",
+        "nativeadvanced"),
+    AdsData(
+        "Banner",
+        "https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19751.png",
+        "fbbanner"),
   ];
 }
 
