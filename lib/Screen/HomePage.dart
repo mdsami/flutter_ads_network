@@ -14,7 +14,9 @@ class HomePage extends StatelessWidget {
           itemBuilder: (BuildContext, index) {
             return RaisedButton(
               color: Colors.white,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, "/${AdsList[index].GoTo}");
+              },
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -33,9 +35,9 @@ class HomePage extends StatelessWidget {
 
   List<AdsData> AdsList = [
     AdsData("Banner", "Google", "Banner"),
-    AdsData("InterStital", "Google", ""),
-    AdsData("Rewarded", "Google", ""),
-    AdsData("Native Advanced", "Google", ""),
+    AdsData("InterStital", "Google", "interstital"),
+    AdsData("Rewarded", "Google", "rewarded"),
+    AdsData("Native Advanced", "Google", "nativeadvanced"),
   ];
 }
 

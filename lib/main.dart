@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutteradsnetwork/Screen/HomePage.dart';
+import 'package:flutteradsnetwork/google/NativeAdvanced.dart';
+import 'package:flutteradsnetwork/google/banner.dart' as bn;
+import 'package:flutteradsnetwork/google/interstital.dart';
+import 'package:flutteradsnetwork/google/rewarded.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,9 +18,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      initialRoute: '/',
       routes: {
-        '/Banner': (context) => Banner(),
+        '/': (context) => HomePage(),
+        '/Banner': (context) => bn.Banner(),
+        '/interstital': (context) => interstital(),
+        '/rewarded': (context) => rewarded(),
+        '/nativeadvanced': (context) => NativeAdvanced(),
       },
     );
   }
