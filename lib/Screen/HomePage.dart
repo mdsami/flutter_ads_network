@@ -58,8 +58,28 @@ class HomePage extends StatelessWidget {
         "https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19751.png",
         "fbbanner"),
     AdsData(
-        "Banner",
+        "Native",
         "https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19751.png",
+        "fbnative"),
+    AdsData(
+        "Native Banner",
+        "https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19751.png",
+        "fbnativebanner"),
+    AdsData(
+        "Intersttitial",
+        "https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19751.png",
+        "fbinterstitial"),
+    AdsData(
+        "Rewarded",
+        "https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19751.png",
+        "fbrewarded"),
+    AdsData(
+        "inStream",
+        "https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19751.png",
+        "fbinstream"),
+    AdsData(
+        "Banner",
+        "https://media-exp1.licdn.com/dms/image/C4D0BAQEN5iRX4ysNxg/company-logo_200_200/0?e=2159024400&v=beta&t=PNVnNsHN2cChAc9O7eTOGTVewp4bopFkykQVLF8rB1s",
         "startapp"),
   ];
 }
