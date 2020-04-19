@@ -54,7 +54,7 @@ class AdsPageState extends State<AdsPage> {
     super.initState();
 
     FacebookAudienceNetwork.init(
-      testingId: "35e92a63-8102-46a4-b0f5-4fd269e6a13c",
+      testingId: "974cb6d3-8998-4ab2-88dc-c3ddbfd1c7fb",
     );
 
     _loadInterstitialAd();

@@ -57,6 +57,10 @@ class HomePage extends StatelessWidget {
         "Banner",
         "https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19751.png",
         "fbbanner"),
+    AdsData(
+        "Banner",
+        "https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19751.png",
+        "startapp"),
   ];
 }
 

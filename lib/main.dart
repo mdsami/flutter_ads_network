@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutteradsnetwork/Screen/HomePage.dart';
 import 'package:flutteradsnetwork/facebook/fbbanner.dart';
+import 'package:flutteradsnetwork/startapp/StartAppAds.dart';
 import 'package:flutteradsnetwork/google/NativeAdvanced.dart';
 import 'package:flutteradsnetwork/google/banner.dart' as bn;
 import 'package:flutteradsnetwork/google/interstital.dart';
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
         '/rewarded': (context) => rewarded(),
         '/nativeadvanced': (context) => NativeAdvanced(),
         '/fbbanner': (context) => FbBanner(),
+        '/startapp': (context) => StartAppAds(),
       },
     );
   }
